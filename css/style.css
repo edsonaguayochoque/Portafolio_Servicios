@@ -100,7 +100,7 @@ h2{
   border-radius: 10px;
   box-shadow: 0px 0px 10px black;
   /* box-shadow: derecha abajo difuminado color; */
-  padding: 30px;
+  padding: 4%;
   margin: 0px 0px 30px 0px;
   background-color: white;
   display: flex;
@@ -110,7 +110,7 @@ h2{
 
 }
 .project-left{
-  width: 500px;
+  width: 48%;
 }
 .project-title{
   margin: 0px;
@@ -130,11 +130,12 @@ h2{
   margin-top: 20px;
   font-size: 20px;
 }
-.project-containerRight{
-  width: 500px;
+.project-container_image{
+  width: 48%;
+  margin: 0px;
 }
 .project-image{
-  width: 500px;
+  width: 100%;
 }
 
 .experiences{
@@ -319,7 +320,7 @@ h2{
  }
 
  .link:hover{
-   background-color: #0ce73025 ;
+   background-color: #28e217b7 ;
  }
 
  .header figure{
@@ -330,11 +331,60 @@ h2{
    padding: 10px 0px;
  }
 
+ .project{
+
+  display: block;
+  font-size: 16px;
 }
+
+.project-title{
+  font-size: 1.4em;
+}
+
+.project-description{
+  font-size: 1em;
+}
+
+.project-language,.project-link, .project-description{
+
+  margin: 1em 0;
+}
+
+.project-left{
+width: auto;
+}
+
+.project-container_image{
+
+width: 100%;
+}
+
+.projects h2{
+
+  font-size: 1.5em;
+  padding: 1em 0;
+}
+
+}
+
+
 
 @media screen and (max-width:480px){
 
+  .projects{
+    font-size: 0.8em;
+    padding: 0 1.2em 0.8em 1.2em;
+  }
 
+  .project{
+
+    font-size: 14px;
+  }
+
+  .link{
+
+    padding: 0.5em;
+  }
 
 }
 
