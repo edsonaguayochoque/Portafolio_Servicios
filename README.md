@@ -1,2 +1,2 @@
-# David_Torres_PoSe_SRD
-David_Torres_PoSe_SRD = David torres portafolio de servicios Sin responsive Design, este repositorio contiene el portafolio de servicios original de la primera fase
+# EDSON AGUAYO CHOQUE
+Edson Aguayo Choque = Edson Aguayo portafolio de servicios con responsive Design, este repositorio contiene el portafolio de servicios original de la primera fase
