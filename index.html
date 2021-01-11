@@ -15,6 +15,10 @@
   
 </head>
 <body>
+
+    <figure class="conteiner_menu">
+      <img class="menu_hambur" src="img/menu_hamburguesa.png" alt="menu">    
+    </figure>
   <header class="header">
     <div class="wrapper">
       <figure>
@@ -170,14 +174,53 @@
 
   <footer class="footer">
     <div class="wrapper">
-    <div class="footer-details">
-      <p>Curso de desarrollo web</p>
-      <img src="img/dota2.png" alt="">
+      <div class="footer-details">
+        <p>Curso de desarrollo web</p>
+        <img src="img/dota2.png" alt="">
+      </div>
+      <p>Diseñado por David Torres 🍔🍕</p>
     </div>
-    <p>Diseñado por David Torres 🍔🍕</p>
-  </div>
-  
+  </footer>
 
+  <script>
+
+      const cambios= window.matchMedia('screen and (max-width:767px)' );          
+      
+
+      const menu = document.querySelector('.menu');
+      // console.log(menu);
+      const amburguesa=document.querySelector('.menu_hambur');
+      // console.log(amburguesa);
+      
+      cambios.addListener(validacion);
+
+      function validacion(event) {
+
+        if (event.matches) {
+
+          amburguesa.addEventListener('click',mostrar_ocultar);
+          
+        } else {
+          
+          amburguesa.removeEventListener('click',mostrar_ocultar);
+        }
+        
+      }
+
+      validacion(cambios);
+
+      function mostrar_ocultar(){
+
+            if (menu.classList.contains('menu_active')) {
+              
+              menu.classList.remove('menu_active');
+            }
+            else{
+              menu.classList.add('menu_active');
+            }
+      }
+
+  </script>
 
 </body>
 </html>
